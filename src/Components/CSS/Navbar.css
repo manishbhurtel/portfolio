@@ -1,0 +1,158 @@
+.nav_container {
+    height: 60px;
+    width: 100vw;
+    box-shadow: 0px 0px 10px gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+}
+
+.profile img {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.contents {
+    width: 40%;
+}
+
+.contents ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contents ul li {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toggle .para {
+    font-size: 1.3rem;
+}
+
+.checkbox {
+    appearance: none;
+    height: 1.6rem;
+    width: 4rem;
+    border-radius: 1rem;
+    background-color: black;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: rgb(73, 73, 73);
+}
+
+.checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    transform: scale(1.2);
+    background-color: rgb(192, 192, 192);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.checkbox:checked::before {
+    left: calc(4rem - 1.6rem);
+}
+
+.fa-bars {
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav_container2{
+    height: calc(100vh - 60px);
+    animation: slideIN 0.25s ease-in-out;
+    transform: translateY(0);
+    position: fixed;
+    z-index: 3;
+    top:60px;
+    left:0;
+    background-color: white;
+    width:100vw;
+}
+.fa-octagon-xmark{
+    display: none;
+}
+@keyframes slideIN {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:830px) {
+
+    .contents {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+        margin-right: 3rem;
+    }
+
+    .nav_container {
+        justify-content: space-between;
+    }
+
+    .profile {
+        margin-left: 2.5rem;
+    }
+
+    .contents2 ul li {
+        font-size: 1.5rem;
+        text-decoration: none;
+        list-style: none;
+        margin: 2rem;
+    }
+    .nav_container2{
+        padding-top: 10rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .toggle2 .para {
+        font-size: 1.8rem;
+    }
+
+    .toggle2 {
+        width: 15rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2rem;
+        margin: auto;
+    }
+}
