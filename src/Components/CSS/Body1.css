@@ -100,20 +100,19 @@ body{
         margin-bottom: 0;
     }
 }
-@media (max-width:440px) {
+@media (max-width:430px) {
     .body_container{
-        gap: 0.2rem;
-    }
-    .btn_para{
-        transform: scale(0.95);
-        position: absolute;
-        top:35rem;
-        left:0;
+        gap: 0.1rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
     }
     .oops{
-        width: 31rem;
-        position: relative;
-        margin-bottom: 10000rem;
+        transform: scale(0.7);
+        margin-bottom: 0;
+    }
+    .btn_para{
+        transform: scale(0.98);
+        margin-top: -3rem;
     }
 }
 
