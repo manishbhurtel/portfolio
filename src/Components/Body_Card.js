@@ -1,7 +1,7 @@
 import React from 'react'
 import Body2 from './Body2'
 import Card from './Card'
-import '../Components/CSS/Body_Card.css'
+import '../Components/CSS/Body_card.css'
 import '../Components/CSS/Card.css'
 import '../Components/CSS/Body2.css'
 import image1 from '../Images/social-care.gif'
