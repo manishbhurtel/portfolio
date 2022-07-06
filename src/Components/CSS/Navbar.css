@@ -46,7 +46,7 @@
 
 .checkbox {
     appearance: none;
-    height: 1.6rem;
+    height: 1.9rem;
     width: 4rem;
     border-radius: 1rem;
     background-color: black;
@@ -58,21 +58,20 @@
     background-color: rgb(73, 73, 73);
 }
 
-.checkbox::before {
+.checkbox::before{
     content: "";
+    background-color: gray;
     position: absolute;
-    top: 0;
-    left: 0;
+    top:2.4px;
+    left:3.5px;
     height: 1.6rem;
-    width: 1.6rem;
-    transform: scale(1.2);
-    background-color: rgb(192, 192, 192);
+    width:1.6rem;
     border-radius: 50%;
-    transition: 0.3s ease;
+    transition: 0.2s ease-in-out;
 }
 
 .checkbox:checked::before {
-    left: calc(4rem - 1.6rem);
+    left: calc(4rem - 1.8rem);
 }
 
 .fa-bars {
