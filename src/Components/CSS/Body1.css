@@ -83,16 +83,13 @@ body{
 }
 @media (max-width:500px) {
     .body_container{
-        gap: 1rem;
-    }
-    .btn_para{
-        transform: scale(0.95);
+        gap: 0.2rem;
     }
     .oops{
         transform: scale(0.8);
     }
 }
-@media (max-width:400px) {
+@media (max-width:440px) {
     .body_container{
         gap: 0.2rem;
     }
@@ -103,8 +100,9 @@ body{
         left:0;
     }
     .oops{
-        transform: scale(0.7);
+        width: 31rem;
         position: relative;
+        margin-bottom: 10000rem;
     }
 }
 
