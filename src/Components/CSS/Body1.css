@@ -13,9 +13,9 @@ body{
     padding-top:60px;
 }
 .oops{
-    height: 32rem;
-    width: 32rem;
-    margin-bottom: 3rem;
+    height: 34rem;
+    width: 34rem;
+    margin-bottom: 4rem;
 }
 .btn_para{
     padding-left:2rem;
@@ -23,6 +23,7 @@ body{
     /* border: 2px solid black; */
     width:25rem;
     height: 20rem;
+    /* margin-bottom: 1.5rem; */
 }
 .p1{
     font-size: 3rem;
@@ -66,12 +67,18 @@ body{
         flex-direction: column-reverse;
         padding-bottom: 3rem;
     }
+    .oops{
+        margin-bottom: 0;
+    }
 }
 @media (max-width:1040px) {
     .body_container{
         gap: 6rem;
         justify-content: center;
         align-items: center;
+    }
+    .oops{
+        margin-bottom: 0;
     }
 }
 @media (max-width:850px) {
@@ -80,6 +87,9 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .oops{
+        margin-bottom: 0;
+    }
 }
 @media (max-width:500px) {
     .body_container{
@@ -87,6 +97,7 @@ body{
     }
     .oops{
         transform: scale(0.8);
+        margin-bottom: 0;
     }
 }
 @media (max-width:440px) {

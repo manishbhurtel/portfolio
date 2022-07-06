@@ -1,20 +1,20 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import '../Components/CSS/Navbar.css'
 import navImage from '../Images/BH.png'
 
-function Navbar() {
+function Navbar(props) {
     const [bars, setbars] = useState("hidden")
-    const burgerClicked = ()=>{
-        if(bars === "hidden"){
+    const burgerClicked = () => {
+        if (bars === "hidden") {
             setbars("");
         }
-        else{
+        else {
             setbars("hidden");
         }
     }
     return (
         <>
-            <div className="nav_container">
+            <div className="nav_container" style={props.theme}>
                 <div className="profile">
                     <img src={navImage} alt="BH" />
                 </div>
@@ -28,12 +28,12 @@ function Navbar() {
                     </ul>
                 </div>
 
-                
+
                 <div className="toggle">
                     <div className="para">
-                        Dark Mode:
+                    {props.dlMode}
                     </div>
-                    <div className="toggleButton">
+                    <div className="toggleButton" onClick={props.toggleCLicked}>
                         <input type="checkbox" className='checkbox' />
                     </div>
                 </div>
@@ -55,9 +55,9 @@ function Navbar() {
 
                 <div className="toggle2">
                     <div className="para">
-                        Dark Mode:
+                       {props.dlMode}
                     </div>
-                    <div className="toggleButton">
+                    <div className="toggleButton" onClick={props.toggleCLicked}>
                         <input type="checkbox" className='checkbox' />
                     </div>
                 </div>

@@ -60,7 +60,7 @@
 
 .checkbox::before{
     content: "";
-    background-color: gray;
+    background-color: white;
     position: absolute;
     top:2.4px;
     left:3.5px;
