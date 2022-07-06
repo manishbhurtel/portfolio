@@ -11,7 +11,7 @@ import image4 from '../Images/id.gif'
 import image5 from '../Images/award.gif'
 import image6 from '../Images/note.gif'
 
-function Body_Card(props) {
+function Bodycard(props) {
     return (
         <>
             <div className="textPara" style={props.b2theme}>
@@ -29,4 +29,4 @@ function Body_Card(props) {
     )
 }
 
-export default Body_Card
+export default Bodycard
