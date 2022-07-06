@@ -3,6 +3,8 @@ import '../src/Components/CSS/All.css'
 import Body1 from './Components/Body1'
 import Body2 from './Components/Body2'
 import Navbar from './Components/Navbar'
+import '../src/Components/CSS/Body2.css'
+import Body_Card from './Components/Body_Card'
 
 
 function App() {
@@ -43,7 +45,7 @@ function App() {
     <>
       <Navbar theme={navTheme} toggleCLicked={darktoggleClicked} dlMode={textMode}/>
       <Body1 btheme={bodyTheme} />
-      <Body2 />
+      <Body_Card />
     </>
   )
 }

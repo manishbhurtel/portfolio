@@ -1,0 +1,4 @@
+.body2_container{
+    height: calc(100vh - 60px);
+    border: 2px solid black;
+}
