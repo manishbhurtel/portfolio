@@ -4,6 +4,7 @@ import Body1 from './Components/Body1'
 import Navbar from './Components/Navbar'
 import '../src/Components/CSS/Body2.css'
 import Bodycard from './Components/Bodycard'
+import Projectcont from './Components/Projectcont'
 
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
   })
   const [body2Theme, setbody2Theme] = useState({
     backgroundColor: 'rgb(242, 242, 242)',
+    color: 'rgb(40, 40, 40)'
+  })
+  const [projectTheme, setprojectTheme] = useState({
+    backgroundColor: 'white',
     color: 'rgb(40, 40, 40)'
   })
   const [textMode, settextMode] = useState("Dark Mode: ")
@@ -35,6 +40,10 @@ function App() {
         backgroundColor: 'rgb(40, 40, 40)',
         color: 'white'
       })
+      setprojectTheme({
+        backgroundColor: 'rgb(30, 30, 30)',
+        color: 'white'
+      })
     }
     else {
       setnavTheme({
@@ -50,6 +59,10 @@ function App() {
         backgroundColor: 'rgb(242, 242, 242)',
         color: 'rgb(40, 40, 40)'
       })
+      setprojectTheme({
+        backgroundColor: 'white',
+        color: 'rgb(40, 40, 40)'
+      })
     }
   }
   return (
@@ -57,6 +70,7 @@ function App() {
       <Navbar theme={navTheme} toggleCLicked={darktoggleClicked} dlMode={textMode}/>
       <Body1 btheme={bodyTheme} />
       <Bodycard b2theme={body2Theme}/>
+      <Projectcont ptheme={projectTheme}/>
     </>
   )
 }

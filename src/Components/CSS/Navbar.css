@@ -32,6 +32,9 @@
     list-style: none;
     cursor: pointer;
 }
+.contents ul li:hover{
+    color:black;
+}
 
 .toggle {
     display: flex;
