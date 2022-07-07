@@ -31,7 +31,7 @@ function Navbar(props) {
 
                 <div className="toggle">
                     <div className="para">
-                    {props.dlMode}
+                        {props.dlMode}
                     </div>
                     <div className="toggleButton" onClick={props.toggleCLicked}>
                         <input type="checkbox" className='checkbox' />
@@ -42,7 +42,7 @@ function Navbar(props) {
             </div>
 
 
-            <div className={`nav_container2 ${bars}`}>
+            <div className={`nav_container2 ${bars}`} style={props.theme}>
                 <div className="contents2">
                     <ul>
                         <li>HOME</li>
@@ -55,7 +55,7 @@ function Navbar(props) {
 
                 <div className="toggle2">
                     <div className="para">
-                       {props.dlMode}
+                        {props.dlMode}
                     </div>
                     <div className="toggleButton" onClick={props.toggleCLicked}>
                         <input type="checkbox" className='checkbox' />
