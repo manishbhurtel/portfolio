@@ -28,6 +28,10 @@ function Front() {
                 backgroundColor: 'rgb(30, 30, 30)',
                 color: 'white'
             })
+            setnavTheme({
+                backgroundColor: 'rgb(30, 30, 30)',
+                color: 'white'
+            })
             settextMode("Light Mode: ")
             setbody2Theme({
                 backgroundColor: 'rgb(40, 40, 40)',
@@ -39,6 +43,10 @@ function Front() {
             })
         }
         else {
+            setnavTheme({
+                backgroundColor: 'white',
+                color: 'rgb(30, 30, 30)'
+            })
             setbodyTheme({
                 backgroundColor: 'white',
                 color: 'rgb(30, 30, 30)'
@@ -56,6 +64,7 @@ function Front() {
     }
     return (
         <>
+            <Navbar theme={navTheme} toggleCLicked={darktoggleClicked} dlMode={textMode} />
             <Body1 btheme={bodyTheme} />
             <Bodycard b2theme={body2Theme} />
             <Projectcont ptheme={projectTheme} />
