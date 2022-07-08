@@ -32,9 +32,12 @@
     list-style: none;
     cursor: pointer;
 }
-.contents ul li:hover{
-    color:black;
+.contents ul li a{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
 }
+
 
 .toggle {
     display: flex;
@@ -77,7 +80,7 @@
     left: calc(4rem - 1.8rem);
 }
 
-.fa-bars {
+.fa-solid {
     cursor: pointer;
     display: none;
     font-size: 1.5rem;
@@ -117,7 +120,7 @@
         display: none;
     }
 
-    .fa-bars {
+    .fa-solid{
         display: block;
         margin-right: 3rem;
     }
@@ -136,6 +139,12 @@
         list-style: none;
         margin: 2rem;
     }
+    .contents2 ul li a{
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+    }
+    
     .nav_container2{
         padding-top: 10rem;
         justify-content: center;

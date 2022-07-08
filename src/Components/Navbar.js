@@ -1,15 +1,23 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../Components/CSS/Navbar.css'
 import navImage from '../Images/BH.png'
 
 function Navbar(props) {
     const [bars, setbars] = useState("hidden")
+    const [cross, setcross] = useState("fa-bars")
     const burgerClicked = () => {
         if (bars === "hidden") {
             setbars("");
         }
         else {
             setbars("hidden");
+        }
+        if (cross === "fa-bars") {
+            setcross("fa-times")
+        }
+        else {
+            setcross("fa-bars")
         }
     }
     return (
@@ -21,10 +29,10 @@ function Navbar(props) {
 
                 <div className="contents">
                     <ul>
-                        <li>HOME</li>
-                        <li>ABOUT</li>
-                        <li>SERVICES</li>
-                        <li>CONTACT ME</li>
+                        <li><Link to="/" style={props.theme}><a>HOME</a></Link></li>
+                        <li><Link to="/About" style={props.theme}><a>ABOUT</a></Link></li>
+                        <li><Link to="/Services" style={props.theme}><a>SERVICES</a></Link></li>
+                        <li><Link to="/Form" style={props.theme}><a>CONTACT ME</a></Link></li>
                     </ul>
                 </div>
 
@@ -38,17 +46,17 @@ function Navbar(props) {
                     </div>
                 </div>
 
-                <i className="fa-solid fa-bars" onClick={burgerClicked}></i>
+                <i className={`fa-solid ${cross}`} onClick={burgerClicked}></i>
             </div>
 
 
             <div className={`nav_container2 ${bars}`} style={props.theme}>
                 <div className="contents2">
                     <ul>
-                        <li>HOME</li>
-                        <li>ABOUT</li>
-                        <li>SERVICES</li>
-                        <li>CONTACT ME</li>
+                        <li><Link to="/" style={props.theme}><a>HOME</a></Link></li>
+                        <li><Link to="/About" style={props.theme}><a>ABOUT</a></Link></li>
+                        <li><Link to="/Services" style={props.theme}><a>SERVICES</a></Link></li>
+                        <li><Link to="/Form" style={props.theme}><a>CONTACT ME</a></Link></li>
                     </ul>
                 </div>
 

@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import { Route, Routes } from 'react-router'
 import '../src/Components/CSS/All.css'
-import Body1 from './Components/Body1'
-import Navbar from './Components/Navbar'
 import '../src/Components/CSS/Body2.css'
-import Bodycard from './Components/Bodycard'
-import Projectcont from './Components/Projectcont'
+import About from './Components/About'
+import Form from './Components/Form'
+import Front from './Components/Front'
+import Navbar from './Components/Navbar'
+import Services from './Components/Services'
+
 
 
 function App() {
@@ -67,10 +70,13 @@ function App() {
   }
   return (
     <>
-      <Navbar theme={navTheme} toggleCLicked={darktoggleClicked} dlMode={textMode}/>
-      <Body1 btheme={bodyTheme} />
-      <Bodycard b2theme={body2Theme}/>
-      <Projectcont ptheme={projectTheme}/>
+      <Navbar theme={navTheme} toggleCLicked={darktoggleClicked} dlMode={textMode} />
+      <Routes>
+        <Route path="/" element={<Front />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/Form" element={<Form />} />
+      </Routes>
     </>
   )
 }
