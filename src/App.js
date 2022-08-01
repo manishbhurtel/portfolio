@@ -9,7 +9,7 @@ import Navbar from './Components/Navbar'
 import Services from './Components/Services'
 
 
-
+//Projects page ma device ko width 430px pugda, page ko items haru right bata cover hudai ako xa so fix it soon
 function App() {
   const [navTheme, setnavTheme] = useState({
     backgroundColor: 'white',
